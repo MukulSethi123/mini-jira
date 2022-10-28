@@ -5,6 +5,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "./_ticket.css";
 interface TicketProps {
   title: string;
+  details: string;
   Id: number;
   boardId: number;
   moveTicketRight(Id: number): void;
@@ -13,6 +14,7 @@ interface TicketProps {
 
 function Ticket({
   title,
+  details,
   Id,
   boardId,
   moveTicketRight,
@@ -25,6 +27,7 @@ function Ticket({
     moveTicketRight(Id);
   };
   const ticketPopUpController = () => {
+    console.log("clicked");
     setShowTicket(!showTicket);
   };
   const [showTicket, setShowTicket] = useState(false);
@@ -42,7 +45,13 @@ function Ticket({
           <ArrowForwardIcon fontSize="large" onClick={onClickRightButton} />
         )}
       </div>
-      {showTicket && <TicketPopUp />}
+      {showTicket && (
+        <TicketPopUp
+          title={title}
+          details={details}
+          ticketPopUpController={ticketPopUpController}
+        />
+      )}
     </div>
   );
 }

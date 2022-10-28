@@ -1,8 +1,22 @@
 .ticketPopUp{
-    height: 60%;
-    width: 60%;
-    background-color: antiquewhite;
+    height: 70%;
+    width: 80%;
+    background-color: rgb(236, 233, 233);
     z-index: 1;
     position: fixed;
-    
+    left: 10%;
+    top: 13%;
+    text-align: center;
+    box-shadow: 0px 5px 15px -1px #888888;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+/* .ticketPopUp__header h1{
+    margin: -.6rem 1rem;
+} */
+.ticketPopUp__body{
+    margin-left: 1rem;
+    text-align: left;
 }

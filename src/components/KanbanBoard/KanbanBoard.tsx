@@ -34,6 +34,7 @@ function KanbanBoard({ title, ticketList, boardId }: KanbanBoardProps) {
             <Ticket
               key={ticket.Id}
               Id={ticket.Id}
+              details={ticket.details}
               boardId={boardId}
               title={ticket.title}
               moveTicketRight={moveTicketRight}
