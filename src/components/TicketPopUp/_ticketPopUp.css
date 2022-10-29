@@ -1,14 +1,12 @@
 .ticketPopUp{
-    height: 70%;
-    width: 80%;
-    background-color: rgb(236, 233, 233);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(218, 209, 209, 0.474);
     z-index: 1;
     position: fixed;
-    left: 10%;
-    top: 13%;
+    left: 0%;
+    top: 0%;
     text-align: center;
-    box-shadow: 0px 5px 15px -1px #888888;
-    border-radius: .5rem;
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -19,4 +17,14 @@
 .ticketPopUp__body{
     margin-left: 1rem;
     text-align: left;
+    height: 70%;
+    width: 70%;
+    background-color: white;
+    border: solid;
+    box-shadow: 0px 5px 15px -1px #888888;
+    border-radius: .5rem;
+    padding: 2rem;
+    position: fixed;
+    left: 12.5%;
+    top:10%
 }

@@ -33,9 +33,7 @@ function Ticket({
   const [showTicket, setShowTicket] = useState(false);
   return (
     <div className="ticket">
-      <h5 className="ticket__title" onClick={ticketPopUpController}>
-        {title}
-      </h5>
+      <h5 className="ticket__title">{title}</h5>
       <p className="ticket__body"></p>
       <div className="ticket__actions">
         {boardId !== 1 && (

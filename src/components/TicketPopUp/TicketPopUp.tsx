@@ -12,7 +12,7 @@ function TicketPopUp({
   ticketPopUpController,
 }: TicketPopUpProps) {
   return (
-    <div className="ticketPopUp" onBlur={ticketPopUpController}>
+    <div className="ticketPopUp" onClick={ticketPopUpController}>
       <div className="ticketPopUp__closeButton">
         <CloseIcon onClick={ticketPopUpController} />
       </div>
