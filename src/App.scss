@@ -1,9 +1,18 @@
 .app__board {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
+    overflow: scroll;
+    margin-left: 10rem;
 }
 .App{
     text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.App h1 {
+    margin-left: 1rem;
 }
