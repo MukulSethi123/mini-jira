@@ -1,15 +1,16 @@
 .ticketPopUp{
     height: 100%;
     width: 100%;
-    background-color: rgba(218, 209, 209, 0.474);
+    background-color: rgba(238, 233, 233, 0.648);
     z-index: 1;
     position: fixed;
     left: 0%;
     top: 0%;
-    text-align: center;
+    text-align: right;
     display: flex;
     flex-direction: row;
     padding: 1rem;
+
 }
 /* .ticketPopUp__header h1{
     margin: -.6rem 1rem;
@@ -26,5 +27,12 @@
     padding: 2rem;
     position: fixed;
     left: 12.5%;
-    top:10%
+    top:10%;
+    
+    
+}
+.ticketPopUp__closeButton{
+    position: fixed;
+    right: 5rem;
+    top:5rem
 }

@@ -1,9 +1,25 @@
 .app__board {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: scroll;
+    width: 100%;
+    transition: margin-left .5s, transform 0.5s;
+
+}
+.app__board>div{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    text-align: center;
 }
 .App{
     text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.App h1 {
+    margin-left: 1rem;
 }

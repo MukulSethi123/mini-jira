@@ -12,9 +12,9 @@ function TicketPopUp({
   ticketPopUpController,
 }: TicketPopUpProps) {
   return (
-    <div className="ticketPopUp" onClick={ticketPopUpController}>
+    <nav className="ticketPopUp">
       <div className="ticketPopUp__closeButton">
-        <CloseIcon onClick={ticketPopUpController} />
+        <CloseIcon fontSize="large" onClick={ticketPopUpController} />
       </div>
       <div className="ticketPopUp__body">
         <div className="ticketPopUp__header">
@@ -24,7 +24,7 @@ function TicketPopUp({
           <p>{details}</p>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 
