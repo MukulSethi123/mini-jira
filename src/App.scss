@@ -1,11 +1,18 @@
 .app__board {
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     overflow: scroll;
-    margin-left: 10rem;
+    width: 100%;
+    transition: margin-left .5s, transform 0.5s;
+
+}
+.app__board>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .App{
     text-align: center;

@@ -1,25 +1,51 @@
-import React, { useState } from "react";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
+import React from "react";
 import "./_navBar.css";
-const NavBar = () => {
-  const min = {
-    width: "10px",
-  };
-  const [minimize, setMinimize] = useState(false);
-  const collapseNavBar = () => {
-    setMinimize(!minimize);
-  };
+interface NavBarProps {
+  closeNavBar(): void;
+  minimize: boolean;
+}
+const NavBar = ({ closeNavBar, minimize }: NavBarProps) => {
   return (
     <div
       className="navBar"
       style={{
         width: minimize ? "10px" : "8rem",
-        marginRight: minimize ? "-10rem" : "0",
       }}
     >
-      <div onClick={collapseNavBar}>m</div>
+      <ArrowBackIcon
+        className="navBar__closeButton"
+        onClick={closeNavBar}
+        style={
+          minimize
+            ? {
+                transform: "rotate(180deg)",
+                transition: " transform .5s",
+              }
+            : {
+                transform: "rotate(0deg)",
+                transition: " transform .5s",
+              }
+        }
+      />
       <div
         className="navBar__container"
-        style={{ display: minimize ? "none" : "" }}
+        style={
+          minimize
+            ? {
+                position: "fixed",
+                left: "-20rem",
+                top: "5rem",
+                transition: "left .5s ,transform 2s",
+              }
+            : {
+                position: "fixed",
+                left: "1rem",
+                top: "5rem",
+                transition: "left .5s ,transform 2s",
+              }
+        }
       >
         <div className="navBar__header">
           <h1>navBar</h1>
