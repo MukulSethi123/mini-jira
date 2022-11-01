@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./_kanbanBoard.css";
 import Ticket from "../Ticket/Ticket";
+
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "./../../types/reduxStateTypes";
-import { moveToLeft, moveToRight } from "./../Redux/actions/ticketActions";
+import {
+  moveToLeft,
+  moveToRight,
+  addTicket,
+} from "./../Redux/actions/ticketActions";
 interface KanbanBoardProps {
   title: string;
   boardId: number;
@@ -21,6 +26,7 @@ function KanbanBoard({ title, ticketList, boardId }: KanbanBoardProps) {
   const moveTicketRight = (id: number) => {
     dispatch(moveToRight(id));
   };
+
   useEffect(() => {}, [allTickets]);
   return (
     <div className="board">

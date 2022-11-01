@@ -3,7 +3,7 @@ interface BoardListState {
   Id: number;
   ticketList: number[];
 }
-interface allTicketsState {
+export interface allTicketsState {
   Id: number;
   boardId: number;
   title: string;

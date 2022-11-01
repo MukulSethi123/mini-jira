@@ -4,9 +4,24 @@
     margin:1rem;
     min-height: 20rem;
     text-align: center;
-    border-radius: .2rem;
+    border-radius: .3rem;
 }
 
 .board__title{
-    padding: .5rem 0;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.board__addIcon{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.board__addIcon:hover{
+    cursor:pointer;
+    color: #68A61C;
 }

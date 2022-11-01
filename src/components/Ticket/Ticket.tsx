@@ -27,7 +27,6 @@ function Ticket({
     moveTicketRight(Id);
   };
   const ticketPopUpController = () => {
-    console.log("clicked");
     setShowTicket(!showTicket);
   };
   const [showTicket, setShowTicket] = useState(false);
