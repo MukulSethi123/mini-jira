@@ -3,7 +3,7 @@ import { TicketActionConstants } from "../actions/actionConstants";
 const ticketReducer = (initialState = state.allTickets, action: any) => {
   switch (action.type) {
     case TicketActionConstants.ADD_TICKET:
-      return initialState;
+      return [...initialState, action.newTicket];
     case TicketActionConstants.DELETE_TICKET:
       return initialState;
     case TicketActionConstants.MOVE_TO_RIGHT: {
