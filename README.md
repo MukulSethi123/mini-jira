@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# App Demo
+![Mini-Jira-Demo-gif](https://user-images.githubusercontent.com/43720400/206899705-84237c66-360c-4a42-af97-5e1e57e8ee9d.gif)
 
 ## Available Scripts
 
