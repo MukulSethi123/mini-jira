@@ -29,7 +29,7 @@ function App() {
     //any way to only get the id of the last ticket?
 
     const newTicket: allTicketsState = {
-      Id: allTickets.slice(-1)[0].Id,
+      Id: allTickets.slice(-1)[0].Id + 1,
       boardId: 1,
       title: inputVal,
       details: "something something",
