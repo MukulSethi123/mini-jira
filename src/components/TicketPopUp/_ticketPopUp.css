@@ -12,9 +12,7 @@
     padding: 1rem;
 
 }
-/* .ticketPopUp__header h1{
-    margin: -.6rem 1rem;
-} */
+
 .ticketPopUp__body{
     margin-left: 1rem;
     text-align: left;
@@ -29,10 +27,20 @@
     left: 12.5%;
     top:10%;
     
-    
 }
+.ticketPopUp__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ticketPopUp__editIcon{
+    color: green;
+}
+
 .ticketPopUp__closeButton{
     position: fixed;
     right: 5rem;
     top:5rem
 }
+

@@ -32,11 +32,11 @@ function Ticket({
   const [showTicket, setShowTicket] = useState(false);
   return (
     <div className="ticket">
-      <h5 className="ticket__title" onClick={ticketPopUpController}>
+      <h5 className="ticket__title clickable" onClick={ticketPopUpController}>
         {title}
       </h5>
       <p className="ticket__body"></p>
-      <div className="ticket__actions">
+      <div className="ticket__actions clickable">
         {boardId !== 1 && (
           <ArrowBackIcon fontSize="large" onClick={onClickLeftButton} />
         )}

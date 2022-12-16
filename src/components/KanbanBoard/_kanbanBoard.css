@@ -5,6 +5,7 @@
     min-height: 20rem;
     text-align: center;
     border-radius: .3rem;
+    /* transition: height .5ms; figure out a way to make height increase smooth */
 }
 
 .board__title{

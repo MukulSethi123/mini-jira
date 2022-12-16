@@ -15,7 +15,7 @@ const NavBar = ({ closeNavBar, minimize }: NavBarProps) => {
       }}
     >
       <ArrowBackIcon
-        className="navBar__closeButton"
+        className="navBar__closeButton clickable"
         onClick={closeNavBar}
         style={
           minimize

@@ -1,72 +1,75 @@
 .app__board {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    overflow: scroll;
-    width: 100%;
-    transition: margin-left .5s, transform 0.5s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: scroll;
+  width: 100%;
+  transition: margin-left 0.5s, transform 0.5s;
+}
+.app__board > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
 
-}
-.app__board>div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.App{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-}
-
-.App h1 {
-    margin-left: 1rem;
-}
+// .App h1 {
+//     margin-left: 1rem;
+// }
 
 .app__board__addIcon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    bottom: 5rem;
-    right: 5rem;
-    background-color: beige;
-    border-radius: 100%;
-    padding:2rem;
-    box-shadow: 0px 1px 7px -2px #888888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  background-color: beige;
+  border-radius: 100%;
+  padding: 2rem;
+  box-shadow: 0px 1px 7px -2px #888888;
 }
 
 .app__board__addIcon:hover {
-    cursor: pointer;
-    color: #68A61C;
-    box-shadow: 0px 5px 15px -2px #888888;
+  cursor: pointer;
+  color: #68a61c;
+  box-shadow: 0px 5px 15px -2px #888888;
 }
 
-.app__board__addTicketForm{
-    width: 25rem;
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 4rem;
-    right: 4rem;
-    background: rgb(236, 233, 233);
-    border-radius: .3rem;
-    box-shadow: 0px 1px 7px -2px #888888;
-    padding:2rem;
-
+.app__board__addTicketForm {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  background: rgb(236, 233, 233);
+  border-radius: 0.3rem;
+  box-shadow: 0px 1px 7px -2px #888888;
+  padding: 2rem;
 }
 
-.app__board__addTicketForm > input,button{
-    border: none;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: .2rem;
-    // box-shadow: 0px 1px 7px -2px #888888;
+.app__board__addTicketForm > input,
+button {
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  // box-shadow: 0px 1px 7px -2px #888888;
 }
 
-.app__board__addTicketForm>button{
-    background-color:rgb(212, 206, 206) ;
-    // box-shadow: 0px 1px 7px -2px #888888;
+.app__board__addTicketForm > button {
+  background-color: rgb(212, 206, 206);
+  // box-shadow: 0px 1px 7px -2px #888888;
+}
+
+.clickable:hover {
+  cursor: pointer;
 }

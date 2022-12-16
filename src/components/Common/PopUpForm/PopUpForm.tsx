@@ -12,7 +12,7 @@ function PopUpForm({ openForm, onClickBtn }: PopUpFormProps) {
   };
   return (
     <form
-      className="openForm"
+      className="openForm clickable"
       style={
         openForm
           ? {
@@ -32,7 +32,10 @@ function PopUpForm({ openForm, onClickBtn }: PopUpFormProps) {
       }
     >
       <input placeholder="title" value={inputVal} onChange={onChange} />
-      <button onClick={(event) => onClickBtn(event, inputVal, setInputVal)}>
+      <button
+        className="clickable"
+        onClick={(event) => onClickBtn(event, inputVal, setInputVal)}
+      >
         addTicket
       </button>
     </form>
