@@ -9,3 +9,7 @@ export const moveToRight = (id: number) => {
 export const addTicket = (obj: object): any => {
   return { type: TicketActionConstants.ADD_TICKET, newTicket: obj };
 };
+
+export const editTicket = (obj: object) => {
+  return { type: TicketActionConstants.EDIT_TICKET, updateTicket: obj };
+};

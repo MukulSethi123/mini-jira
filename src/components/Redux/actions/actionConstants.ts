@@ -6,6 +6,7 @@ export enum BoardActionsConstants {
 export enum TicketActionConstants {
   ADD_TICKET = "ADD_TICKET",
   DELETE_TICKET = "DELETE_TICKET",
+  EDIT_TICKET = "EDIT_TICKET",
   MOVE_TO_LEFT = "MOVE_TO_LEFT",
   MOVE_TO_RIGHT = "MOVE_TO_RIGHT",
 }
