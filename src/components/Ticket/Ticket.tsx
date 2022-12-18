@@ -46,6 +46,8 @@ function Ticket({
       </div>
       {showTicket && (
         <TicketPopUp
+          id={Id}
+          boardId={boardId}
           title={title}
           details={details}
           ticketPopUpController={ticketPopUpController}
