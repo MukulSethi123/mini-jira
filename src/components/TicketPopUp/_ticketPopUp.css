@@ -36,6 +36,7 @@
 
 .ticketPopUp__header input {
     font-size: 1.5rem;
+    padding: 1rem;
     font-weight: bold;
     border: none;
     width: 90%;
@@ -65,11 +66,7 @@
     outline: solid black;
     border-radius: .3rem;
 }
-.ticketPopUp__details input:focus {
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: none;
-}
+
 .ticketPopUp__editIcon{
     color: green;
 }

@@ -23,20 +23,14 @@ function TicketPopUp({
   const [editedDetails, setEditedDetails] = useState(details);
   const editTitleRef = useRef(null);
   const dispatch = useDispatch();
-  // const editDetailsRef = useRef(
-  //   HTMLTextAreaElement
-  // ) as React.MutableRefObject<HTMLTextAreaElement>;
   const titleOnChange = (e: any) => {
-    console.log(e.target.value);
     setEditedTitle(e.target.value);
     if (editedTitle.length > 25) {
-      // alert("max length of header is 15");
       console.log("max length 15");
     }
   };
 
   const detailsOnChange = (e: any) => {
-    console.log(e.target.value);
     setEditedDetails(e.target.value);
   };
 
