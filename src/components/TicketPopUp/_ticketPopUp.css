@@ -67,10 +67,6 @@
     border-radius: .3rem;
 }
 
-.ticketPopUp__editIcon{
-    color: green;
-}
-
 .ticketPopUp__closeButton{
     position: fixed;
     right: 5rem;
