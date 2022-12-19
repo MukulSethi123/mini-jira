@@ -1,6 +1,10 @@
 # App Demo
 ![Mini-Jira-Demo-gif](https://user-images.githubusercontent.com/43720400/206899705-84237c66-360c-4a42-af97-5e1e57e8ee9d.gif)
 
+## Notices
+
+MiniJira now contians all the basic CRUD operations hence the project development will now focus on back end. Expect a Mini-jira-backend🥳🥳
+
 ## Available Scripts
 
 In the project directory, you can run:
