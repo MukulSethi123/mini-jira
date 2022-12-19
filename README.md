@@ -3,7 +3,7 @@
 
 ## Notices
 
-MiniJira now contians all the basic CRUD operations hence the project development will now focus on back end. Expect a Mini-jira-backend🥳🥳
+MiniJira now contians all the basic CRUD operations hence the project development will now focus on back end. Expect a Mini-jira-backend soon🥳🥳
 
 ## Available Scripts
 
