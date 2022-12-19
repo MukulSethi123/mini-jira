@@ -13,3 +13,7 @@ export const addTicket = (obj: object): any => {
 export const editTicket = (obj: object) => {
   return { type: TicketActionConstants.EDIT_TICKET, updateTicket: obj };
 };
+
+export const deleteTicket = (id: number) => {
+  return { type: TicketActionConstants.DELETE_TICKET, Id: id };
+};

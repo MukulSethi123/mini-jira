@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./_ticketPopUp.css";
-import { editTicket } from "../Redux/actions/ticketActions";
+import { editTicket, deleteTicket } from "../Redux/actions/ticketActions";
 import CloseIcon from "@mui/icons-material/Close";
-import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 import { useDispatch } from "react-redux";
 interface TicketPopUpProps {
   id: number;
@@ -23,6 +23,10 @@ function TicketPopUp({
   const [editedDetails, setEditedDetails] = useState(details);
   const editTitleRef = useRef(null);
   const dispatch = useDispatch();
+  const onDeleteClick = () => {
+    dispatch(deleteTicket(id));
+    ticketPopUpController();
+  };
   const titleOnChange = (e: any) => {
     setEditedTitle(e.target.value);
     if (editedTitle.length > 25) {
@@ -36,11 +40,9 @@ function TicketPopUp({
 
   const handleKeyPress = (e: any) => {
     if (e.key === "Enter") {
-      console.log({ title: editedTitle });
       dispatch(
         editTicket({
           Id: id,
-          boardId: boardId,
           title: editedTitle,
           details: editedDetails,
         })
@@ -55,7 +57,12 @@ function TicketPopUp({
         <CloseIcon fontSize="large" onClick={ticketPopUpController} />
       </div>
       <div className="ticketPopUp__body" onKeyDown={handleKeyPress}>
-        <div className="ticketPopUp__header">
+        <div
+          className="ticketPopUp__header"
+          onClick={(e) => {
+            if (e.detail === 2) setEditMode(!editMode);
+          }}
+        >
           {!editMode ? (
             <h1>{title}</h1>
           ) : (
@@ -67,9 +74,11 @@ function TicketPopUp({
             />
           )}
           <h1>
-            <EditIcon
-              onClick={() => setEditMode(!editMode)}
-              className="ticketPopUp__editIcon clickable"
+            <DeleteIcon
+              fontSize="large"
+              onClick={onDeleteClick}
+              color="error"
+              className="clickable"
             />
           </h1>
         </div>
