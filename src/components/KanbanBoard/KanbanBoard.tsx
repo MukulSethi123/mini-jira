@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./_kanbanBoard.css";
+import "./_kanbanBoard.scss";
 import Ticket from "../Ticket/Ticket";
 
 import { useSelector, useDispatch } from "react-redux";
