@@ -1,0 +1,14 @@
+.navBar {
+  background-color: rgb(236, 233, 233);
+  height: 100vh;
+  padding: 1rem 1rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: width 0.5s, transform 0.5s;
+
+  &__closeButton {
+    margin-left: -0.5rem;
+  }
+}
