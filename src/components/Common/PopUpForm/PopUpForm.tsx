@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./_popUpForm.css";
+import "./_popUpForm.scss";
 interface PopUpFormProps {
   openForm: boolean;
   //how do i make setInput val function
