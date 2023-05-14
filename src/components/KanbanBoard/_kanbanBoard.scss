@@ -1,0 +1,28 @@
+.board {
+  min-width: 20rem;
+  background-color: rgb(236, 233, 233);
+  margin: 1rem;
+  min-height: 20rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  /* transition: height .5ms; figure out a way to make height increase smooth */
+
+  &__title {
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  &__addIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__addIcon:hover {
+    cursor: pointer;
+    color: #68a61c;
+  }
+}

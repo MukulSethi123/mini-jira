@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TicketPopUp from "../TicketPopUp/TicketPopUp";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import "./_ticket.css";
+import "./_ticket.scss";
 interface TicketProps {
   title: string;
   details: string;
