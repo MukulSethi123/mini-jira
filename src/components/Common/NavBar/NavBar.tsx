@@ -1,7 +1,7 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 import React from "react";
-import "./_navBar.css";
+import "./_navBar.scss";
 interface NavBarProps {
   closeNavBar(): void;
   minimize: boolean;
