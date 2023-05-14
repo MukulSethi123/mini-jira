@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "./_ticketPopUp.css";
+import "./_ticketPopUp.scss";
 import { editTicket } from "../Redux/actions/ticketActions";
 import CloseIcon from "@mui/icons-material/Close";
 import EditIcon from "@mui/icons-material/Edit";
