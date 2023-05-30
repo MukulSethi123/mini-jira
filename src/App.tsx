@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.scss";
 import { allTicketsState } from "./types/reduxStateTypes";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,7 +9,6 @@ import { RootState } from "./types/reduxStateTypes";
 import NavBar from "./components/Common/NavBar/NavBar";
 import { addTicket } from "./components/Redux/actions/ticketActions";
 import PopUpForm from "./components/Common/PopUpForm/PopUpForm";
-import { Root } from "react-dom/client";
 
 function App() {
   const [minimize, setMinimize] = useState(false);
