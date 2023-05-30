@@ -1,9 +1,11 @@
-import state from "./../State";
+import state from "../State";
 import { TicketActionConstants } from "../actions/actionConstants";
-import { act } from "react-dom/test-utils";
-import Ticket from "../../Ticket/Ticket";
+
 const ticketReducer = (initialState = state.allTickets, action: any) => {
   switch (action.type) {
+    //updates the state with all the ticets fetched from backend
+    case TicketActionConstants.GET_ALL_TICKETS:
+      return action.initialState;
     case TicketActionConstants.ADD_TICKET:
       return [...initialState, action.newTicket];
     case TicketActionConstants.DELETE_TICKET: {

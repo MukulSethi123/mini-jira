@@ -4,11 +4,8 @@ import Ticket from "../Ticket/Ticket";
 
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "./../../types/reduxStateTypes";
-import {
-  moveToLeft,
-  moveToRight,
-  addTicket,
-} from "./../Redux/actions/ticketActions";
+
+import { moveToLeft, moveToRight } from "./../Redux/actions/ticketActions";
 interface KanbanBoardProps {
   title: string;
   boardId: number;
