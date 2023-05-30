@@ -1,6 +1,5 @@
 import { TicketActionConstants } from "./actionConstants";
 const getTicketsSuccess = (allTickets: any) => {
-  console.log("eheh");
   return {
     type: TicketActionConstants.GET_ALL_TICKETS,
     initialState: allTickets,
