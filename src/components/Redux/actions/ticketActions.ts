@@ -1,4 +1,5 @@
 import { TicketActionConstants } from "./actionConstants";
+import axios from "axios";
 const getTicketsSuccess = (allTickets: any) => {
   return {
     type: TicketActionConstants.GET_ALL_TICKETS,
@@ -16,9 +17,22 @@ export const moveToRight = (id: number) => {
   return { type: TicketActionConstants.MOVE_TO_RIGHT, Id: id };
 };
 
-export const addTicket = (obj: object): any => {
+const addTicketSuccess = (obj: object): any => {
   return { type: TicketActionConstants.ADD_TICKET, newTicket: obj };
 };
+
+export const addTicket =
+  (obj: object): any =>
+  (dispatch: any) => {
+    //not optimistic
+    axios({
+      method: "post",
+      url: "http://localhost:3080/",
+      data: obj,
+    }).then(() => {
+      dispatch(addTicketSuccess(obj));
+    });
+  };
 
 export const editTicket = (obj: object) => {
   return { type: TicketActionConstants.EDIT_TICKET, updateTicket: obj };
