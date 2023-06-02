@@ -38,6 +38,17 @@ export const editTicket = (obj: object) => {
   return { type: TicketActionConstants.EDIT_TICKET, updateTicket: obj };
 };
 
-export const deleteTicket = (id: number) => {
+const deleteTicketSuccess = (id: number) => {
   return { type: TicketActionConstants.DELETE_TICKET, Id: id };
 };
+
+export const deleteTicket =
+  (id: number): any =>
+  (dispatch: any) => {
+    axios({
+      method: "post",
+      url: `http://localhost:3080/delete/${id}`,
+    }).then(() => {
+      dispatch(deleteTicketSuccess(id));
+    });
+  };
