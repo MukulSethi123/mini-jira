@@ -24,10 +24,9 @@ function App() {
   };
   const onAddTicketBtn = (event: any, inputVal: string, setInputVal: any) => {
     event.preventDefault();
-    //any way to only get the id of the last ticket?
 
     const newTicket: allTicketsState = {
-      Id: allTickets.slice(-1)[0].Id + 1,
+      Id: allTickets.length ? allTickets.slice(-1)[0].Id + 1 : 1,
       boardId: 1,
       title: inputVal,
       details: "something something",
