@@ -17,11 +17,11 @@ function KanbanBoard({ title, ticketList, boardId }: KanbanBoardProps) {
   const dispatch = useDispatch();
 
   const moveticketLeft = (id: number) => {
-    dispatch(moveToLeft(id));
+    dispatch(moveToLeft(id, boardId));
   };
 
   const moveTicketRight = (id: number) => {
-    dispatch(moveToRight(id));
+    dispatch(moveToRight(id, boardId));
   };
 
   useEffect(() => {}, [allTickets]);

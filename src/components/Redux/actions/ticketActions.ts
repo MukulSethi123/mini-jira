@@ -10,12 +10,38 @@ export const getAllTickets = () => async (dispatch: any) => {
   const res = await fetch("http://localhost:3080").then((res) => res.json());
   dispatch(getTicketsSuccess(res));
 };
-export const moveToLeft = (id: number) => {
+const moveToLeftSuccess = (id: number) => {
   return { type: TicketActionConstants.MOVE_TO_LEFT, Id: id };
 };
-export const moveToRight = (id: number) => {
-  return { type: TicketActionConstants.MOVE_TO_RIGHT, Id: id };
+export const moveToLeft =
+  (id: number, boardId: number): any =>
+  (dispatch: any) => {
+    //optimistic
+    axios({
+      method: "post",
+      url: "http://localhost:3080/update/",
+      data: { id: id, boardId: boardId - 1 },
+    });
+    dispatch(moveToLeftSuccess(id));
+  };
+const moveToRightSuccess = (id: number) => {
+  return {
+    type: TicketActionConstants.MOVE_TO_RIGHT,
+    Id: id,
+  };
 };
+
+export const moveToRight =
+  (id: number, boardId: number): any =>
+  (dispatch: any) => {
+    // optimistic
+    axios({
+      method: "post",
+      url: "http://localhost:3080/update/",
+      data: { id: id, boardId: boardId + 1 },
+    });
+    dispatch(moveToRightSuccess(id));
+  };
 
 const addTicketSuccess = (obj: object): any => {
   return { type: TicketActionConstants.ADD_TICKET, newTicket: obj };
