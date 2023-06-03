@@ -55,14 +55,30 @@ export const addTicket =
       method: "post",
       url: "http://localhost:3080/",
       data: obj,
-    }).then(() => {
-      dispatch(addTicketSuccess(obj));
-    });
+    })
+      .then(() => {
+        dispatch(addTicketSuccess(obj));
+      })
+      .catch((e) => console.log(e));
   };
 
-export const editTicket = (obj: object) => {
+const editTicketSuccess = (obj: object) => {
   return { type: TicketActionConstants.EDIT_TICKET, updateTicket: obj };
 };
+
+export const editTicket =
+  (obj: object): any =>
+  (dispatch: any) => {
+    axios({
+      method: "post",
+      url: "http://localhost:3080/update/ticket-details",
+      data: obj,
+    })
+      .then(() => dispatch(editTicketSuccess(obj)))
+      .catch((e) => {
+        console.log(e);
+      });
+  };
 
 const deleteTicketSuccess = (id: number) => {
   return { type: TicketActionConstants.DELETE_TICKET, Id: id };
@@ -74,7 +90,9 @@ export const deleteTicket =
     axios({
       method: "post",
       url: `http://localhost:3080/delete/${id}`,
-    }).then(() => {
-      dispatch(deleteTicketSuccess(id));
-    });
+    })
+      .then(() => {
+        dispatch(deleteTicketSuccess(id));
+      })
+      .catch((e) => console.log(e));
   };

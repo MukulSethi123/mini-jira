@@ -3,7 +3,13 @@
 
 ## Notices
 
-MINI-JIRA and MINI-JIRA-SERVER integration starts now. 🧰 🛠️
+Mini-Jira is now amazing complete 🎉 🎊 
+1. create ticket
+2. delete ticket 
+3. update ticket 
+4. move ticket to left 
+5. move ticket to right 
+Are all able to interact with the database and. 🥳
 
 ## Available Scripts
 
