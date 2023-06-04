@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TicketPopUp from "../TicketPopUp/TicketPopUp";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
+import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
 import "./_ticket.scss";
 interface TicketProps {
   title: string;
@@ -32,16 +32,22 @@ function Ticket({
   const [showTicket, setShowTicket] = useState(false);
   return (
     <div className="ticket">
-      <h5 className="ticket__title clickable" onClick={ticketPopUpController}>
-        {title}
-      </h5>
-      <p className="ticket__body"></p>
+      <div className="ticket__top">
+        <h3 className="ticket__title clickable" onClick={ticketPopUpController}>
+          {title}
+        </h3>
+
+        <p className="ticket__details">{details}</p>
+      </div>
       <div className="ticket__actions clickable">
         {boardId !== 1 && (
-          <ArrowBackIcon fontSize="large" onClick={onClickLeftButton} />
+          <ArrowLeftRoundedIcon fontSize="large" onClick={onClickLeftButton} />
         )}
         {boardId < 3 && (
-          <ArrowForwardIcon fontSize="large" onClick={onClickRightButton} />
+          <ArrowRightRoundedIcon
+            fontSize="large"
+            onClick={onClickRightButton}
+          />
         )}
       </div>
       {showTicket && (

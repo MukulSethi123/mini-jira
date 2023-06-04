@@ -4,7 +4,7 @@ import Ticket from "../Ticket/Ticket";
 
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "./../../types/reduxStateTypes";
-
+import ReactCSSTransitionGroup from "react-transition-group"; // ES6
 import { moveToLeft, moveToRight } from "./../Redux/actions/ticketActions";
 interface KanbanBoardProps {
   title: string;

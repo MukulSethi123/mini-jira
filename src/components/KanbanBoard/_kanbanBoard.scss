@@ -1,10 +1,12 @@
 .board {
   min-width: 20rem;
-  background-color: rgb(236, 233, 233);
+  background-color: #f2f2f3;
   margin: 1rem;
-  min-height: 20rem;
+  width: 100%;
+  min-height: 50vh;
   text-align: center;
   border-radius: 0.3rem;
+  transition: all 2s;
   /* transition: height .5ms; figure out a way to make height increase smooth */
 
   &__title {
@@ -23,6 +25,6 @@
 
   &__addIcon:hover {
     cursor: pointer;
-    color: #68a61c;
+    color: white;
   }
 }
