@@ -1,5 +1,6 @@
 import { ChangeEventHandler, useState } from "react";
 import "./login.scss";
+import axios from "axios";
 function Login() {
   const [formData, setFormData] = useState({
     email: "",
@@ -16,11 +17,24 @@ function Login() {
     setFormData({ ...formData, password: event.target.value });
   };
 
-  const signUp = (event: React.SyntheticEvent) => {
+  const signUp = async (event: React.SyntheticEvent) => {
     event.preventDefault();
   };
-  const login = (event: React.SyntheticEvent) => {
+  const login = async (event: React.SyntheticEvent) => {
     event.preventDefault();
+    try {
+      const result = await axios({
+        method: "post",
+        url: "http://localhost:3070/login",
+        data: formData,
+      });
+      if (result) {
+        console.log("login successful");
+        //redirect to app
+      }
+    } catch (error: any) {
+      console.log(error.response.data);
+    }
   };
   return (
     <div className="login">
