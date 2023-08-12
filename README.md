@@ -6,8 +6,11 @@
 ### Old Version
 ![Mini-Jira-Demo-gif](https://user-images.githubusercontent.com/43720400/206899705-84237c66-360c-4a42-af97-5e1e57e8ee9d.gif)
 
-## Notices
+## Up Coming Changes 
+Mini-jira-auth-server a microservice for mini-jira authentication has been created
+mini-jira will next incorporate authentication
 
+## Notices
 Mini-Jira is now amazing complete 🎉 🎊 
 1. create ticket
 2. delete ticket 
