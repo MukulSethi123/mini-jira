@@ -19,6 +19,19 @@ function Login() {
 
   const signUp = async (event: React.SyntheticEvent) => {
     event.preventDefault();
+    try {
+      const result = await axios({
+        method: "post",
+        url: "http://localhost:3070/sign-up",
+        data: formData,
+      });
+      if (result) {
+        console.log("signUp successful");
+        //redirect to app
+      }
+    } catch (error: any) {
+      console.log(error.response.data);
+    }
   };
   const login = async (event: React.SyntheticEvent) => {
     event.preventDefault();
