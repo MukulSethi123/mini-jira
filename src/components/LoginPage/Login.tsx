@@ -25,7 +25,7 @@ function Login() {
         url: "http://localhost:3070/sign-up",
         data: formData,
       });
-      if (result) {
+      if (result.status === 200) {
         console.log("signUp successful");
         //redirect to app
       }
@@ -41,7 +41,7 @@ function Login() {
         url: "http://localhost:3070/login",
         data: formData,
       });
-      if (result) {
+      if (result.status === 200) {
         console.log("login successful");
         //redirect to app
       }
