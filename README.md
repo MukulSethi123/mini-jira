@@ -6,11 +6,15 @@
 ### Old Version
 ![Mini-Jira-Demo-gif](https://user-images.githubusercontent.com/43720400/206899705-84237c66-360c-4a42-af97-5e1e57e8ee9d.gif)
 
-## Up Coming Changes 
-Mini-jira-auth-server a microservice for mini-jira authentication has been created
-mini-jira will next incorporate authentication
-
 ## Notices
+routing using React-router will the the next update to this application 
+
+## Updates
+
+<p>latest Merge adds a new login page to the application - routing needs to be implemented though should take a day at max</p>
+<img width="1790" alt="image" src="https://github.com/MukulSethi123/mini-jira/assets/43720400/4cc76b27-8a24-4b8c-9541-d25f8899fa58">
+
+-------------------------------------------
 Mini-Jira is now amazing complete 🎉 🎊 
 1. create ticket
 2. delete ticket 
