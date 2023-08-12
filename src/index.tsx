@@ -8,19 +8,21 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import rootReducer from "./components/Redux/reducers/rootReducer";
 import { getAllTickets } from "./components/Redux/actions/ticketActions";
+import Login from "./components/LoginPage/Login";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 const store = createStore(rootReducer, applyMiddleware(thunk));
-
+const loggedIn = false;
 //get initial data
 store.dispatch(getAllTickets());
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Login />
+      {loggedIn && <App />}
     </Provider>
   </React.StrictMode>
 );
