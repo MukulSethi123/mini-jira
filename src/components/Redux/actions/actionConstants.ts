@@ -16,3 +16,8 @@ export enum TicketActionConstants {
   MOVE_TO_LEFT = "MOVE_TO_LEFT",
   MOVE_TO_RIGHT = "MOVE_TO_RIGHT",
 }
+
+export enum UserActionConstants {
+  LOGIN_USER = "LOGIN_USER",
+  LOGOUT_USER = "LOGOUT_USER",
+}

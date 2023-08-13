@@ -69,6 +69,10 @@
       width: 100%;
       button {
         cursor: pointer;
+        border: none;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.2rem;
         width: 49%;
         &:hover {
           background-color: #fba84a;
