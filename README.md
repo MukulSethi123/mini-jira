@@ -1,26 +1,25 @@
 # App Demo
 ### Latest Version
+![image](https://github.com/MukulSethi123/mini-jira/assets/43720400/e87a4c12-ac1f-473e-97a0-e32722d305c6)
+
 ![ezgif com-gif-maker](https://github.com/MukulSethi123/mini-jira/assets/43720400/5e9ea64d-4ab7-4bb2-a312-51038ea2ed76)
 
 
 ### Old Version
 ![Mini-Jira-Demo-gif](https://user-images.githubusercontent.com/43720400/206899705-84237c66-360c-4a42-af97-5e1e57e8ee9d.gif)
 
-## Notices
-routing using React-router will the the next update to this application 
 
 ## Updates
-
-<p>latest Merge adds a new login page to the application - routing needs to be implemented though should take a day at max</p>
-<img width="1790" alt="image" src="https://github.com/MukulSethi123/mini-jira/assets/43720400/4cc76b27-8a24-4b8c-9541-d25f8899fa58">
-
 -------------------------------------------
 Mini-Jira is now amazing complete 🎉 🎊 
 1. create ticket
 2. delete ticket 
 3. update ticket 
 4. move ticket to left 
-5. move ticket to right 
+5. move ticket to right
+6. has routing
+7. has login page
+8. the application route is protected and redirects to the login page if auth token is null
 Are all able to interact with the database and. 🥳
 
 ## Available Scripts
