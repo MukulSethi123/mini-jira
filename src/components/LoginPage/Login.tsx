@@ -1,7 +1,12 @@
-import { ChangeEventHandler, useState } from "react";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
 import "./login.scss";
 import axios from "axios";
+import { loginUser } from "../Redux/actions/userActions";
 function Login() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -27,7 +32,6 @@ function Login() {
       });
       if (result.status === 200) {
         console.log("signUp successful");
-        //redirect to app
       }
     } catch (error: any) {
       console.log(error.response.data);
@@ -43,7 +47,8 @@ function Login() {
       });
       if (result.status === 200) {
         console.log("login successful");
-        //redirect to app
+        dispatch(loginUser(result.data));
+        navigate("/");
       }
     } catch (error: any) {
       console.log(error.response.data);

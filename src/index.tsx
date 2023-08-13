@@ -1,28 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import rootReducer from "./components/Redux/reducers/rootReducer";
 import { getAllTickets } from "./components/Redux/actions/ticketActions";
-import Login from "./components/LoginPage/Login";
+import { BrowserRouter } from "react-router-dom";
+import GetRoutes from "./GetRoutes";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 const store = createStore(rootReducer, applyMiddleware(thunk));
-const loggedIn = false;
 //get initial data
 store.dispatch(getAllTickets());
 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Login />
-      {loggedIn && <App />}
+      <BrowserRouter>
+        <GetRoutes />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
