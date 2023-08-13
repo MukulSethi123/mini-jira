@@ -1,4 +1,8 @@
 # App Demo
+## System Design
+![Blank board (1)](https://github.com/MukulSethi123/mini-jira/assets/43720400/af752529-607f-4496-b0b9-d5a5b058e462)
+
+
 ### Latest Version
 ![image](https://github.com/MukulSethi123/mini-jira/assets/43720400/e87a4c12-ac1f-473e-97a0-e32722d305c6)
 
@@ -10,7 +14,6 @@
 
 
 ## Updates
--------------------------------------------
 Mini-Jira is now amazing complete 🎉 🎊 
 1. create ticket
 2. delete ticket 
@@ -20,7 +23,7 @@ Mini-Jira is now amazing complete 🎉 🎊
 6. has routing
 7. has login page
 8. the application route is protected and redirects to the login page if auth token is null
-Are all able to interact with the database and. 🥳
+9. Are all able to interact with the database using their servers  🥳
 
 ## Available Scripts
 
