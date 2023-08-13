@@ -23,7 +23,7 @@ Mini-Jira is now amazing complete 🎉 🎊
 6. has routing
 7. has login page
 8. the application route is protected and redirects to the login page if auth token is null
-9. Are all able to interact with the database using their servers  🥳
+9. all are able to interact with the database using their servers  🥳
 
 ## Available Scripts
 
