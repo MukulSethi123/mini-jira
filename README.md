@@ -1,6 +1,7 @@
 # App Demo
 ## System Design
-![Blank board (1)](https://github.com/MukulSethi123/mini-jira/assets/43720400/af752529-607f-4496-b0b9-d5a5b058e462)
+![Blank board (2)](https://github.com/MukulSethi123/mini-jira/assets/43720400/cfa54ad2-d7df-4aea-a078-12f16c088ecf)
+
 
 
 ### Latest Version
